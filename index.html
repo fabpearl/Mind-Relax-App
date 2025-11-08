@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mind Relax App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧘‍♀️ Mind Relax App</h1>
+
+    <div class="modes">
+      <button id="themeToggle">🌗 Toggle Theme</button>
+    </div>
+
+    <div class="sounds">
+      <button data-sound="rain">🌧 Rain</button>
+      <button data-sound="ocean">🌊 Ocean</button>
+      <button data-sound="forest">🌲 Forest</button>
+      <button data-sound="wind">💨 Wind</button>
+    </div>
+
+    <div class="breathing">
+      <div class="circle"></div>
+      <p id="breatheText">Inhale...</p>
+    </div>
+
+    <div class="timer">
+      <label>⏱ Timer (minutes): </label>
+      <input type="number" id="minutes" value="1" min="1" max="30" />
+      <button id="startTimer">Start</button>
+    </div>
+  </div>
+
+  <!-- Audio Elements -->
+  <audio id="rain" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_3a5809f9f6.mp3"></audio>
+  <audio id="ocean" src="https://cdn.pixabay.com/download/audio/2021/10/25/audio_5806b4a2bb.mp3"></audio>
+  <audio id="forest" src="https://cdn.pixabay.com/download/audio/2021/10/29/audio_2228a91ff3.mp3"></audio>
+  <audio id="wind" src="https://cdn.pixabay.com/download/audio/2022/02/23/audio_24a932d7d2.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
